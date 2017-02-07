@@ -4,22 +4,223 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>First Partial Proyect</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <!-- For Foundation Icons, put this in your head -->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
   </head>
   <body>
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
+
+    <div class="title-bar">
+      <div class="title-bar-left">
+        
+        <button class="menu-icon" type="button" data-toggle="offCanvasLeft"></button>
+        <span class="title-bar-title">First Partial Proyect</span>
+      </div>
+      <ul class="menu">
+          <li class = "nav-item"><a href="#home"><i class="fi-list"></i> <span class="nav">Home</span></a></li>
+          <li class = "nav-item"><a href="#devs"><i class="fi-list"></i> <span class="nav">Developers</span></a></li>
+          <li class = "nav-item"><a href="#problem"><i class="fi-list"></i> <span class="nav">Problem</span></a></li>
+          <li class = "nav-item"><a href="#academic-research"><i class="fi-list"></i> <span class="nav">Academic Research</span></a></li>
+          <li class = "nav-item"><a href="#social-impact"><i class="fi-list"></i> <span class="nav">Social Impact</span></a></li>
+        </ul>
+    </div>
+
+
+
+    <div id="home">
+      <div class="row top text-center">
+        <h1> Welcome to our first Partial Proyect! </h1>
+        <h3> We hope you enjoy your stay! </h3>
       </div>
     </div>
 
+     <div class="row space"></div>
+
+    <div  id="devs">
+      <div class="row title">
+        <div class="small-12 columns text-center header">
+          <h1>Meet the developers</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+        <ul class="orbit-container">
+          <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>&#9664;</button>
+          <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button>
+          <li class="is-active orbit-slide">
+            <div>
+              <h3 class="text-center">Luis Palomino Trevilla</h3>
+              <img class="foto" src="luis.jpg" width="200px">
+              <p class="text-center">Second semester student.</p>
+              <p class="contact-info text-center"><a data-open="exampleModal1">Contact</a></p>
+            </div>
+          </li>
+          <li class="orbit-slide">
+            <div>
+              <h3 class="text-center">Sergio Omar Alvarado</h3>
+              <img class="foto" src="sergio.jpg" width="200px">
+              <p class="text-center">Second semester student.</p>
+              <p class="contact-info text-center"><a data-open="exampleModal2">Contact</a></p>
+            </div>
+          </li>
+          
+        </ul>
+        <nav class="orbit-bullets">
+         <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+         <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+       </nav>
+      </div>
+      </div>
+    </div>
     
+    <div class="reveal" id="exampleModal1" data-reveal>
+      <h1 class="text-center name">Luis Palomino Trevilla</h1>
+      <img class="foto" src="luis.jpg" width="200px">
+      <p class="text-center">
+        <a style="color: #000000" href="https://www.facebook.com/palominotrevilla" target="_blank">Contact Me!</a>
+      </p>
+      <button class="close-button" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <div class="reveal" id="exampleModal2" data-reveal>
+      <h1 class="text-center name">Sergio Omar Alvarado</h1>
+      <img class="foto" src="sergio.jpg" width="200px">
+      <p class="text-center">
+        <a style="color: #000000" href="https://www.facebook.com/sombiy" target="_blank">Contact Me!</a>
+      </p>
+      <button class="close-button" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+     <div class="row space"></div>
+
+    <div id="problem">
+      <div class="row title">
+        <div class="small-12 columns text-center">
+          <h1>Know the Problem</h1>
+        </div>
+      </div>
+      <div class="row">
+        <ul class="tabs" data-tabs id="example-tabs">
+          <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">What?</a></li>
+          <li class="tabs-title"><a href="#panel2">Who?</a></li>
+          <li class="tabs-title"><a href="#panel3">When?</a></li>
+          <li class="tabs-title"><a href="#panel4">Where?</a></li>
+          <li class="tabs-title"><a href="#panel5">Why?</a></li>
+          <li class="tabs-title"><a href="#panel6">How?</a></li>
+        </ul>
+
+        <div class="tabs-content" data-tabs-content="example-tabs">
+          <div class="tabs-panel is-active text-center" id="panel1">
+            <p>What?</p>
+            <p>The problem that we identified is the inefficiency of searching books when you go to any library, specially this Campus' library.</p>
+            <img class="thumbnail" src="library.jpg" alt="itesm library.">
+
+          </div>
+          <div class="tabs-panel text-center" id="panel2">
+            <p>Who?</p>
+            <p>Students that want to research are the most affected by this problem due to the lack of information given when they want to find a book in the library. But not only the students suffer from this, also some of the teachers.</p>
+            <img class="thumbnail" src="estudiantes.jpg">
+          </div>
+          <div class="tabs-panel text-center" id="panel3">
+            <p>When?</p>
+            <p>This problem has been happening since the library was built.</p>
+          </div>
+          <div class="tabs-panel text-center" id="panel4">
+            <p>Where?</p>
+            <p>This problem currently occurs at the itesm GDL Campus' library.</p>
+            <img class="thumbnail" src="campus.jpg">
+          </div>
+          <div class="tabs-panel text-center" id="panel5">
+            <p>Why?</p>
+            <p>Clear instructions aren't given to the students/teachers that want to find a book. There isn't a good system that can provide the students the exact location of the material they are looking for.</p>
+          </div>
+          <div class="tabs-panel text-center" id="panel6">
+            <p>How?</p>
+            <p>When the students want to look for a book in the library, they are given a code that should lead them to the place where the book is, the problem is that it is very difficult to understand this code and sometimes the book isn't there when the computer says it is.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row space"></div>
+
+    <div id="academic-research">
+      <div class="row title">
+        <div class="small-12 columns text-center">
+          <h1>Academic Research</h1>
+        </div>
+      </div>
+      <div class="row container">
+        <div class="large-6 columns text">
+          <p>Students arent used to search for information in books because they consider it takes too much time and they are right,
+          since the search of the book it's already much slower.</p>
+        </div>
+        <img src="research.jpg" class="large-6 columns">
+      </div>
+    </div>
+
+    <div class="row space"></div>
+
+    <div id="social-impact">
+      <div class="row title">
+        <div class="small-12 columns text-center">
+          <h1>Social Impact</h1>
+        </div>
+      </div>
+      <div class="row container">
+        <div class="text">
+          <p>Students and teachers are being less eficient at their work and homeworks for the extra time it takes them to find a boook. So most of the students prefer to look for information on the internet that might not be accurate.</p>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="row full-width">
+        <div class="small-12 medium-3 large-4 columns">
+          <i class="fi-laptop"></i>
+          <p>This site was created using Foundation</p>
+        </div>
+        <div class="small-12 medium-3 large-4 columns">
+          <i class="fi-html5"></i>
+          <p>In this site you can find all the information related to our first partial proyect. If you have any questions or suggestions regardin the proyect, please contact any of the developers and they will get back to you as soon as possible.</p>
+        </div>
+        <div class="small-6 medium-3 large-2 columns">
+          <h4>Work With Me</h4>
+          <ul class="footer-links">
+            <li><a href="#">What I Do</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">FAQ's</a></li>
+          <ul>
+        </div>
+        <div class="small-6 medium-3 large-2 columns">
+          <h4>Follow Me</h4>
+          <ul class="footer-links">
+            <li><a href="https://github.com/LuisPalominoTrevilla" target="_blank">GitHub</a></li>
+            <li><a href="https://www.facebook.com/palominotrevilla" target="_blank">Facebook</a></li>
+            <li><a href="https://twitter.com/luis_palominot" target="_blank">Twitter</a></li>
+          <ul>
+        </div>
+      </div>
+    </footer>
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
   </body>
 </html>
