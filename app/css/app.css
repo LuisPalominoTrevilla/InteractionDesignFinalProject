@@ -20,6 +20,7 @@ body{
 	display: inline-block;
 	margin-bottom: -15px;
 	margin-left: 10px;
+  background-color: #000000;
 }
 
 .nav{
@@ -120,6 +121,7 @@ body{
   font-size: 22px;
   font-family: 'Bitter', serif;
   text-align: justify;
+  text-indent: 50px;
 }
 
 .container{
