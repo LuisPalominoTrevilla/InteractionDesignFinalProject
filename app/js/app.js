@@ -26,6 +26,16 @@ t.on("mouseout", function(){
 	t.addClass("fondo");
 });
 
+
+//The following script is for the page exam.html
+var hide_temporal = $(".temp-hide");
+var button_show = $(".unhide");
+hide_temporal.hide();
+button_show.on('click', function(){
+	hide_temporal.show(); //Show information
+	button_show.hide();  //Hide the button once it is pressed
+});
+
 //The following code was retrieved from http://www.coffeecup.com/forums/foundation-framer/adding-a-scroll-transition-to-a-link-on-same-page/
 
 $(document).ready(function(){

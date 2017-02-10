@@ -4,6 +4,10 @@ body{
   background-color: #84a4d8;
 }
 
+.exam{
+  background-color: #60840b;
+}
+
 .title-bar{
 	padding-top: 0;
   height: 50px;
@@ -37,13 +41,14 @@ body{
 
 .row{
   margin: 0 auto;
-
+  
 }
 
 .top{
   margin-top: 0;
   height: 700px;
   padding-top: 300px;
+  background-color: #000000;
 }
 
 .image{
@@ -197,4 +202,16 @@ body{
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
 }
 
+.animate{
+  width: 100px;
+  animation-name: image-animate;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes image-animate {
+    0% {width: 200px;}
+    50% {width: 300px;}
+    100% {width: 200px;}
+}
 

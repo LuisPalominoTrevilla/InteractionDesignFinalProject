@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="eng">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Palomino</title>
+    <link rel="stylesheet" type="text/css" href="css/stylewelcome.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="nice">Introduction to interaction design</h1>
+    </header>
+    <main>
+      <div>
+        <h1>What's your favourite course?</h1>
+        <p>
+          Object Oriented Programming
+        </p>
+        <h1>What's your favourite website/app?</h1>
+        <p>
+          Whatsapp
+        </p>
+      </div>
+      <div>
+        <h1>What's your favourite song/movie?</h1>
+        <p>
+          Pirates of the Caribean
+        </p>
+        <h1>How much time do you spend on social networks?</h1>
+        <p>
+          10 hours each day
+        </p>
+      </div>
+      <div class="third">
+        <h1>What would you like to learn?</h1>
+        <p>
+          I would like to learn new techniques to create a good responsive and
+          accesible website. I would like to sharpen my skills and I expect to have
+          a really good proyect at the end of the semester.
+        </p>
+      </div>
+    </main>
+    <footer>
+      <p >
+         Luis Palomino A01228574
+      </p>
+      <button id="target">Click me</button>
+    </footer>
+
+    <script>
+      $( "#target" ).click(function() {
+        var p = $('p');
+        p[0].css('font-size', '100px');
+    </script>
+  </body>
+</html>

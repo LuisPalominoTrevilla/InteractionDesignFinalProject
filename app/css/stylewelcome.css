@@ -1,0 +1,66 @@
+
+body{
+  background-image: url("../images/galaxy.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0% 0% 0% 0%;
+}
+
+header{
+  background-color: rgba(141, 40, 150, 0.78);
+  padding: 2%0% 2% 0%;
+}
+
+h1{
+  background: rgba(73, 215, 228, 0.71);
+  text-align: center;
+}
+
+.nice{
+  font-size: 400%;
+  color: white;
+  background-color: transparent;
+}
+
+
+div{
+  background-color: rgba(17, 57, 154, 0.85);
+  padding: 2% 2% 2% 2%;
+  display: inline-block;
+  width: 40%;
+  margin-top: 4%;
+  margin-left: 4%;
+
+}
+
+
+@media screen and (max-width: 1200px){
+  div{
+    background-color: rgba(17, 57, 154, 0.85);
+    padding: 2% 2% 2% 2%;
+    display: block;
+    width: 87vw;
+    margin-top: 4%;
+    margin-left: 4%;
+  }
+}
+
+.third{
+  display: block;
+  margin: auto;
+  margin-top: 4%;
+
+}
+
+p{
+  text-decoration: underline;
+  font-size: 200%;
+  color: white;
+}
+
+footer{
+  margin-top: 3%;
+  background-color: rgba(137, 32, 230, 0.69);
+  height: 100px;
+}
