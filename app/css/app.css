@@ -44,8 +44,16 @@ body{
   margin-top: 0;
   height: 700px;
   padding-top: 300px;
+}
+
+.image{
+  background-image: url("map.jpg");
+}
+
+.fondo{
   background-color: #000000;
 }
+
 
 .top h1{
   font-size: 300%;

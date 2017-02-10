@@ -17,6 +17,15 @@ for(var i = 0; i < navItems.length; i++){
 }
 
 
+var t = $("#top").addClass('fondo');
+t.on("mouseover", function(){
+	t.removeClass("fondo").addClass("image");
+});
+t.on("mouseout", function(){
+	t.removeClass("image");
+	t.addClass("fondo");
+});
+
 //The following code was retrieved from http://www.coffeecup.com/forums/foundation-framer/adding-a-scroll-transition-to-a-link-on-same-page/
 
 $(document).ready(function(){
